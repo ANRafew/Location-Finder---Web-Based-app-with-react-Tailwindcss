@@ -13,11 +13,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-[url('/map1.jpg')]">
-      {lat===null || lon===null ? (
-        <h1 className="text-2xl font-bold">LOCATION FINDER</h1>
-      ) : (<h1 className="text-2xl font-bold">Your Location</h1>)}
-
-
+      
       {lat === null || lon === null ? (
         <LocationButton onLocationFetched={handleLocationFetched} />
       ) : (
